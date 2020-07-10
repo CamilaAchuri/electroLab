@@ -7,8 +7,6 @@ String letraMorse = "";
 char mensaje[125]; 
 int contador = 0;
 
-int espacio = 0;
-
 String mensajeDecodificado = "";
   
 
@@ -42,7 +40,8 @@ void loop(){
     digitalWrite(3, HIGH);    
     mensaje[contador]='.';
     contador++;
-    //Serial.println(mensaje);
+    Serial.println(mensaje);
+    delay(10);
   }}
   if ( pulsador_amarillo == 0) {
    digitalWrite(6, LOW);
@@ -51,32 +50,23 @@ void loop(){
     digitalWrite(6, HIGH);    
     mensaje[contador]='-';
     contador++;
-    //Serial.println(mensaje);
-    //delay(10);
+    Serial.println(mensaje);
+    delay(10);
   }}
   if ( pulsador_azul == 0) {
    digitalWrite(9, LOW);
    pulsador_azul = digitalRead(8);
   if (pulsador_azul == 1) {
     digitalWrite(9, HIGH);  
-    //if (mensaje[contador-1]=='_') {
-     // espacio = espacio + 1;
-    // if (espacio == 1) {
-     //  mensajeDecodificado = mensajeDecodificado + "";
-     //} 
-     // if (espacio > 2) {
-     //   mensajeDecodificado = mensajeDecodificado;
-     // }
-   // } else {
+
       for (int i = 0; i<= contador-1;i++) {
         letraMorse = letraMorse + mensaje[i];  
       }
       mensajeDecodificado += diccionario(letraMorse);
-      espacio = 0;
+ 
       contador = 0;
       letraMorse = "";
-    //}
-    //delay(10);
+ 
     Serial.println(mensajeDecodificado);
     delay(10);
   }}

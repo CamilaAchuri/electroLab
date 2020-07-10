@@ -1,0 +1,68 @@
+Luego de armar el circuito en arduino (vea los archivo de ejemplo circuito base, y circuito final), asegurese de tenerlas conexiones en los mismos canales o modificar el codigo según sus conexiones.
+
+Recuerde qué:
+Pulsar el botón verde equivale a punto
+Pulsar el botón amarillo equivale a raya
+
+Al finalizar la escritura de una letra debe pulsar el botón azul.
+
+Recuerde el alfabeto: 
+
+A = .-
+B = -...
+C = -.-.
+D = -..
+E = .
+F = ..-.
+G = --.
+H = ....
+I = ..
+J = .---
+K = -.-
+L = .-..
+M = --
+N = -.
+O = ---
+P = .--.
+Q = --.-
+R = .-.
+S = ...
+T = -
+U = ..-
+V = ...-
+W = .--
+X = -..-
+Y = -.--
+Z = --..
+
+Recuerde los números:
+0 = -----
+1 = .----
+2 = ..---
+3 = ...--
+4 = ....-
+5 = .....
+6 = -....
+7 = --...
+8 = ---..
+9 = ----.
+
+Ejemplo: Supongamos que quiere escribir la palabra MAR (-- .- .-.) usted debe oprimir los siguientes pulsadores:
+
+AMARILLO AMARILLO
+ AZUL
+VERDE AMARILLO
+ AZUL
+VERDE AMARILLO VERDE
+ AZUL AZUL <- Cambio de palabra
+
+
+
+Faltan cosas es el codigo como:
+ - limpiar información cuando hay un error
+ - Que el mensaje solo salga cuando este finalizado ó que el mensaje se imprima en un archivo word o algo así
+
+
+Si tiene dudas o algo no le funciona ponga su Issue.
+
+
