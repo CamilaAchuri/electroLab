@@ -40,8 +40,8 @@ void loop(){
     digitalWrite(3, HIGH);    
     mensaje[contador]='.';
     contador++;
-    Serial.println(mensaje);
-    delay(10);
+    //Serial.println(mensaje);
+    //delay(10);
   }}
   if ( pulsador_amarillo == 0) {
    digitalWrite(6, LOW);
@@ -50,8 +50,8 @@ void loop(){
     digitalWrite(6, HIGH);    
     mensaje[contador]='-';
     contador++;
-    Serial.println(mensaje);
-    delay(10);
+    //Serial.println(mensaje);
+    //delay(10);
   }}
   if ( pulsador_azul == 0) {
    digitalWrite(9, LOW);
