@@ -19,7 +19,6 @@ byte heart[8] = {
 };
 
 void setup() {                   
- Serial.begin(9600);       // Puerto serial configurado a 9600 Baudios
  pinMode(led, OUTPUT);     //Iniciando led como variable de salida
  pinMode(corazon, INPUT);  //Iniciando conteo de pulsos como variable de entrada
  lcd.begin(16,2);          //iniciando pantalla
@@ -29,6 +28,8 @@ void setup() {
  lcd.print("Pulsos "); //Mostrando titulo en pantalla
  lcd.write(byte(0));   //Dibujando <3
  delay(60);
+  Serial.begin(9600);       // Puerto serial configurado a 9600 Baudios
+
 }
 
 void loop() {
@@ -41,9 +42,13 @@ void loop() {
  } else {
  digitalWrite(led, LOW);
  }
- //delay(20);
- lcd.setCursor(7,1);      //Inicio de texto en fila 2 columna 7
+
+  lcd.setCursor(7,1);      //Inicio de texto en fila 2 columna 7
  lcd.print(corazon);      //Mostrando conteo de pulsos
- Serial.println(corazon); //grafico por defecto de herramientas-SeriaPlotter
  delay(500);
+ 
+ Serial.println(corazon); //grafico por defecto de herramientas-SeriaPlotter
+ //delay(20);
+
+ 
 }

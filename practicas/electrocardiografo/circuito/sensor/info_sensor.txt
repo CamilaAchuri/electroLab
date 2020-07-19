@@ -1,0 +1,5 @@
+este es un sensor de pulso para Arduino, para su conexión se debe fijar que en la parte de atrás (de donde salen los cables) hay unas letras chiquiticas, la S que en mi caso es el cable blanco se conecta al pin de lectura en este caso A0, el n (cafe) al GND y el + al de 3 o 5v
+
+Info del sensor:
+https://youtu.be/m3nyM40S6hQ?t=66
+

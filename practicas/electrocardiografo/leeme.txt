@@ -1,8 +1,18 @@
-Tutorial super completo de arduino en español
-#Primer commit "ensayo con modulo LCD"
-https://www.youtube.com/playlist?list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2
+Este cardiógrafo es un test del conteo de latidos del corazón.
+El led verde enciende cuando se llega al número máximo de latidos, y en la pantalla LCD se muestra el conteo.
 
 
 
+Aquí explican muy bien como conectar la pantalla LCD en 
+la protoboard con Arduino.
+https://www.youtube.com/watch?v=JEZiHQY-JPI&list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&index=11&t=0s
+
+
+
+LIMITACIONES / PROXIMAS MEJORAS:
+Toca entender bien como funciona el sensor ya que el conteo de pulsos/latidos es muy extraño y en este tienen un intervalo de variación de 250 a 350 (sobredosis de café)...
+
+Encontré este codigo que puede ayudar en una futura apropiación del codigo para hacer bien el electrocardiografo 
+https://gist.github.com/Toni496/f41a35b17d0657369adec6540f99e86d
 
 
