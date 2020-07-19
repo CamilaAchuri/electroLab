@@ -1,0 +1,8 @@
+Tutorial super completo de arduino en español
+#Primer commit "ensayo con modulo LCD"
+https://www.youtube.com/playlist?list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2
+
+
+
+
+
