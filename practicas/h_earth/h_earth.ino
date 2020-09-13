@@ -1,7 +1,7 @@
 #include <Adafruit_NeoPixel.h>
 
 // Variables LED
-int numPixel = 3;
+int numPixel = 19;
 int numPin = 2;
 
 
@@ -35,13 +35,37 @@ void loop() {
  delay(200);
  
 
-tira.setBrightness(distancia);
+tira.setBrightness(5);
  
-for (int i = 0; i<numPixel; i++) {
+//for (int i = 0; i<numPixel; i++) {
+ //tira.setPixelColor(i, tira.Color(160, 104, 212));
+// tira.show();
+// delay(200);
+//}
+
+
+ if(distancia <= 3 && distancia >= 0) {
+   Serial.println("hola amiwis");
+  for (int i = 0; i<numPixel; i++) {
  tira.setPixelColor(i, tira.Color(160, 104, 212));
  tira.show();
  delay(200);
-}
+}}
+else if (distancia <= 15 && distancia >= 4) {
+    for (int i = 0; i<numPixel; i++) {
+ tira.setPixelColor(i, tira.Color(0, 0, 255));
+ tira.show();
+ delay(200);  
+    }}
+  else {
+     Serial.println("chao amiwis");
+    for (int i = 0; i<numPixel; i++) {
+   tira.setPixelColor(i, tira.Color(0, 0, 0));
+ tira.show();
+ delay(200);
+ tira.clear();
+ }
+ }
 
 
 
